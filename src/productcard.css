@@ -1,0 +1,22 @@
+
+
+.cardimg{
+  
+    width: 100%;
+    height:180%;
+    margin-right: 30%;
+    margin-left: 0%;
+    border-bottom: 2px solid black;
+
+} 
+
+.maincard:hover{
+  transform:scale(1.1); 
+  transition-duration: 1s; 
+  box-shadow: 25px 2px 20px #9E9E9E;;
+}
+.maincard{
+    transition: 2s;
+    box-shadow: 5px 1px 5px #9E9E9E;;
+
+}
