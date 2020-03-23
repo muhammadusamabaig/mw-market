@@ -1,14 +1,13 @@
 {
-  "name": "osama_react",
+  "name": "mw-market",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://final_star_ecommerce/osama_react/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@fortawesome/react-fontawesome": "^0.1.8",
     "bootstrap": "^4.4.1",
-    "gh-pages": "^2.2.0",
+    
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.17",
     "react-dom": "^16.12.0",
@@ -23,8 +22,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+   
     "eject": "react-scripts eject"
   }
 }
