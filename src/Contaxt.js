@@ -16,6 +16,11 @@ export default class ProductProvider extends Component {
         gtotal:0,
 
     }
+    modalclosebutton=()=>{
+        this.setState({
+            modalcondition:false
+        })
+    }
 componentDidMount(){
     this.setproduct()
     this.gtotal()
@@ -234,7 +239,8 @@ this.setState({
     render() {
                                                                                                                                                                                                                         
         return(
-            <ProductContaxt.Provider value={{...this.state,handleproduct:this.handleproduct,addcart:this.addcart,modal:this.modal,modalclose:this.modalclose,cartcalincre:this.cartcalincre,delproduct:this.delproduct,gtotal:this.gtotal,cartdelettotupdate:this.cartdelettotupdate,cartcaldecrem:this.cartcaldecrem}}>
+            <ProductContaxt.Provider value={{...this.state,handleproduct:this.handleproduct,addcart:this.addcart,modal:this.modal,modalclose:this.modalclose,cartcalincre:this.cartcalincre,delproduct:this.delproduct,gtotal:this.gtotal,cartdelettotupdate:this.cartdelettotupdate,cartcaldecrem:this.cartcaldecrem
+                ,modalclosebutton:this.modalclosebutton}}>
                 {this.props.children}
                 {console.log(this.state.cart,"mooooooooooooooooooooooodal")}
 

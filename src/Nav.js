@@ -12,12 +12,12 @@ class Nav extends Component {
 <div className="col-6">
                         <Link to="/">
                             
-                            <span style={{color:"white",fontFamily: "Oswald, sans-serif",marginLeft:"9%",fontSize:"32px"}}>Store Products</span></Link>
+                            <span style={{color:"white",fontFamily: "Oswald, sans-serif",marginLeft:"9%",fontSize:"32px"}}>Products</span></Link>
 </div>
 
 <div className="col-6" >
 
-<Link to="/cart"><FontAwesomeIcon icon={faShoppingCart}  style={{color:"white",marginLeft:"55%",fontSize:"393%"}} /></Link>
+<Link to="/cart"><FontAwesomeIcon icon={faShoppingCart}  style={{color:"white",marginLeft:"55%",fontSize:"300%"}} /></Link>
 </div>
                </div>
                          
