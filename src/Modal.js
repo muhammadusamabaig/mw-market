@@ -35,26 +35,31 @@ class Nodal extends Component {
                    <div className="col-xl-12 col-lg-12 colmd-12 col-sm-12">
 
                     <h1 className="text-center" style={{fontFamily:'Trade Winds',fontSize:"303%",color:"rgb(49, 92, 232)"}}>{value.modalproduct.title}</h1>
-                       
-                       <div style={{marginTop:"5%"}}> <img src={value.modalproduct.img} style={{float:"left",paddingRight:"3%"}}/>
-                    <p style={{color:"rgb(7, 96, 237)",fontSize:"203%",fontFamily: "Oswald, sans-serif"}}><span >Product Info</span>{value.modalproduct.info}</p>
-                       
                        </div>
-                        
-                                
-</div >
-<div className="row" style={{marginTop:"3%"}}>
+                       </div>
+                       <div className="row">
+                           <div className="col-12 text-center">
+                     <img src={value.modalproduct.img} />
+                       </div>
+                       </div>
+                       
+                       
+                       <div className="row" style={{marginTop:"3%"}}>
+    <div className="col-12 text-center">
                 
-                    <Link to="/"><Button style={{marginLeft:"10%"}} onClick={value.modalclose}   variant="outline-primary">continoue</Button></Link>
+                    <Link to="/"><Button onClick={value.modalclose} style={{width:"50%"}}   variant="outline-primary">continoue</Button></Link>
 
-
-                    
-            
-                        <Link to="/cart"><Button variant="outline-primary" style={{marginLeft:"20%",width:"100%"}}  onClick={()=>{console.log(value.modalclose()),console.log(value.gtotal())}}>go to cart</Button></Link>
+</div>
+                    </div>
+            <div className="row" style={{marginTop:"3%"}}>
+                <div className="col-12 text-center">
+                        <Link to="/cart"><Button variant="outline-primary" style={{width:"50%"}}  onClick={()=>{console.log(value.modalclose()),console.log(value.gtotal())}}>go to cart</Button></Link>
                         </div> 
 
                          
                          </div>
+
+                         
                          </div>
                          
                    </Modal> 
