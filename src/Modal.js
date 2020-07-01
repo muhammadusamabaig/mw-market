@@ -32,14 +32,14 @@ class Nodal extends Component {
 <div className="container">
                       <div className="row" style={{}}>
 
-                   <div className="col-xl-12 col-lg-12 colmd-12 col-sm-12">
+                   <div className="col-xl-6 col-lg-3 col-xs-12 col-sm-6">
 
-                    <h1 className="text-center" style={{fontFamily:'Trade Winds',fontSize:"303%",color:"rgb(49, 92, 232)"}}>{value.modalproduct.title}</h1>
+                    <h6 className="text-center" style={{fontFamily:'Trade Winds',fontSize:"303%",color:"rgb(49, 92, 232)"}}>{value.modalproduct.title}</h6>
                        </div>
                        </div>
                        <div className="row">
                            <div className="col-12 text-center">
-                     <img src={value.modalproduct.img} />
+                     <img alt="modal" src={value.modalproduct.img} />
                        </div>
                        </div>
                        
@@ -53,7 +53,8 @@ class Nodal extends Component {
                     </div>
             <div className="row" style={{marginTop:"3%"}}>
                 <div className="col-12 text-center">
-                        <Link to="/cart"><Button variant="outline-primary" style={{width:"50%"}}  onClick={()=>{console.log(value.modalclose()),console.log(value.gtotal())}}>go to cart</Button></Link>
+                        <Link to="/cart"><Button variant="outline-primary" style={{width:"50%"}}  onClick={()=>{value.modalclose()
+                            value.gtotal()}}>go to cart</Button></Link>
                         </div> 
 
                          

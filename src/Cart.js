@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import Title from './Title'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee,faShoppingCart,faTrashAlt } from '@fortawesome/free-solid-svg-icons'
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 import {ProductConsumer} from './Contaxt';
 import Cartcolumn from './Cartcolumn'
-import Cartstructure from './Cartstructure'
 
 class Cart extends Component {
     render() {
@@ -59,7 +58,7 @@ class Cart extends Component {
 
 
 
-                                    <img src={item.img} className=" img-fluid col-10 col-lg-2"/>
+                                    <img src={item.img} alt="photo" className=" img-fluid col-10 col-lg-2"/>
                                 <h4 style={{marginTop:"3%"}} className="col-10 col-lg-2"><span className="d-lg-none">name :</span>{item.title}</h4>
                                 <h4  style={{marginTop:"3%"}} className=" col-10 col-lg-2">
                                     <span className="d-lg-none ">Price :</span>{item.price}</h4>

@@ -32,7 +32,8 @@ let tempcart=[...this.state.cart]
 
 let productindex = tempcart.indexOf(this.grtcartitem(id))
 let product =tempcart[productindex]
-product.count=product.count+1
+
+product.count=(product.count+1)
  product.total=product.count*product.price
 
  
@@ -182,23 +183,6 @@ handleproduct=(id)=>{
 }
 addcart=(id)=>{
     
-//    let temparray=[...this.state.Product]
-// console.log(temparray)
-//    const inbexproductinarray= temparray.indexOf(this.grtitem(id))
-//   const product=temparray[inbexproductinarray]
-//   product.incart=true
-//   product.count=1
-//   const price=product.price
-//   product.total=price
-
-   
-//    this.setState(
-//        ()=>{
-//            return{ product:temparray,cart:[...this.state.cart,product]}
-//        },
-//        console.log(this.state.product,"mmmmmmmmm")
-//    )
-
 let temparry=[...this.state.product]
 const index=temparry.indexOf(this.grtitem(id))
  console.log(index,"iiiiiiiiiiiiiiii")
