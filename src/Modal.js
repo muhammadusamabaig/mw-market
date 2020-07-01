@@ -32,9 +32,9 @@ class Nodal extends Component {
 <div className="container">
                       <div className="row" style={{}}>
 
-                   <div className="col-xl-6 col-lg-3 col-xs-12 col-sm-6">
+                   <div className="col-xl-12 col-lg-12 col-xs-12 col-sm-12 text-center">
 
-                    <h6 className="text-center" style={{fontFamily:'Trade Winds',fontSize:"303%",color:"rgb(49, 92, 232)"}}>{value.modalproduct.title}</h6>
+                    <h4 style={{fontFamily:'Trade Winds',color:"rgb(49, 92, 232)"}}>{value.modalproduct.title}</h4>
                        </div>
                        </div>
                        <div className="row">
@@ -43,24 +43,23 @@ class Nodal extends Component {
                        </div>
                        </div>
                        
-                       
-                       <div className="row" style={{marginTop:"3%"}}>
-    <div className="col-12 text-center">
+                      <div> 
+                       <div className="row" style={{marginTop:"1%"}}>
+
                 
-                    <Link to="/"><Button onClick={value.modalclose} style={{width:"50%"}}   variant="outline-primary">continoue</Button></Link>
+                    <Link  className="col-lg-6 col-md-6 col-sm-6 col-xs-12" to="/"><Button onClick={value.modalclose}  style={{width:"100%"}}  variant="outline-primary">continoue</Button></Link>
 
-</div>
-                    </div>
-            <div className="row" style={{marginTop:"3%"}}>
-                <div className="col-12 text-center">
-                        <Link to="/cart"><Button variant="outline-primary" style={{width:"50%"}}  onClick={()=>{value.modalclose()
+
+                    
+                
+                        <Link to="/cart"    className="col-lg-6 col-md-6 col-sm-6 col-xs-12 " ><Button variant="outline-primary" style={{width:"100%"}}  onClick={()=>{value.modalclose()
                             value.gtotal()}}>go to cart</Button></Link>
-                        </div> 
+                        
 
                          
+                      
+                        </div>
                          </div>
-
-                         
                          </div>
                          
                    </Modal> 

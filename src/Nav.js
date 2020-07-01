@@ -12,7 +12,7 @@ class Nav extends Component {
 <div className="col-6">
                         <Link to="/">
                             
-                            <span style={{color:"white",fontFamily: "Oswald, sans-serif",marginLeft:"9%",fontSize:"32px"}}>Products</span></Link>
+                            <span style={{color:"white",fontFamily: "Oswald, sans-serif",marginLeft:"9%",textDecoration:"underline",fontSize:"32px"}}>Products</span></Link>
 </div>
 
 <div className="col-6" >
