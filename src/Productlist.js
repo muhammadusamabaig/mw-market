@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import {ProductConsumer} from './Contaxt';
 import Title from './Title';
 import './productcard.css'
-
 import Productcard from './Productcard';
  class Productlist extends Component {
 
@@ -26,11 +25,17 @@ import Productcard from './Productcard';
                                     {
                                         value.product.map((item)=>{
                                             return(
-                                                <div key={item.id} style={{overflow:"hidden",border:"2px solid",marginTop:"3%",backgroundColor:"white",marginLeft:"5%"}}   className="col-lg-3 col-xl-2 col-sm-5 col-md-3 maincard" >
+                                                
+                                                    
+                                                       
+
+<div key={item.id} style={{overflow:"hidden",border:"2px solid",marginTop:"3%",backgroundColor:"white",marginLeft:"5%"}}   className="col-lg-3 col-xl-2 col-sm-5 col-md-3 maincard" >
                                                     {
 
 <Productcard itempass={item}/>                                                    }
                                                     </div>
+
+                                                        
                                             )
                                         })
                                     }
